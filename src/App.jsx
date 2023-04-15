@@ -36,7 +36,7 @@ const [gifList, setGifList] = useState([]);
           );
 
           /*
-           * Set the user's publicKey in state to be used later!
+           * Set the user's publicKey in *
            */
           setWalletAddress(response.publicKey.toString());
         }
@@ -147,7 +147,7 @@ useEffect(() => {
           View your GIF collection in the metaverse ✨
         </p>
         {!walletAddress && renderNotConnectedContainer()}
-        {/* We just need to add the inverse here! */}
+        {/* add the inverse here */}
         {walletAddress && renderConnectedContainer()}
       </div>
       <div className="footer-container">
